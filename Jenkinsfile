@@ -34,4 +34,16 @@ pipeline {
                                                             bat 'mvn test'
                                                         }
                                                     }
+                                                     stage('Docker login') {
+
+                                                                                                           steps {
+                                                                                                             bat 'echo "login Docker ...."'
+                                                                                                             bat'docker login -u balighbr -p AZErty123@'
+                                                                                                                        }  }
+                                                                                           stage('Docker push') {
+
+                                                                                                           steps {
+                                                                                                               bat 'echo "Docker is pushing ...."'
+                                                                                                           	bat 'docker push balighbr/demo3-1.0.0:latest'
+                                                                                                                        }  }
 }}
