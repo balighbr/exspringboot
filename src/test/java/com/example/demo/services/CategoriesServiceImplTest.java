@@ -72,23 +72,6 @@ public class CategoriesServiceImplTest {
 
     }
 
-//
-//    @Test
-//    public void FindAllSucces() {
-//        List<Categories> foundCategorie = service.findAll();
-//        assertNotNull(foundCategorie);
-//
-//    }
-//    @Test
-//    public void testFindCategorieById() {
-//
-//        Categories categorie = new Categories();
-//        categorie.setNom("Test Category");
-//        categorie.setQt(5L);
-//        Categories savedCategorie = service.creer(categorie);
-//        Optional<Categories> foundCategorie = service.findById(savedCategorie.getId());
-//        assertThat(foundCategorie).isNotNull();
-//
-//    }
+
 
 }

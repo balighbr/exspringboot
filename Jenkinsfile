@@ -28,4 +28,10 @@ pipeline {
                               steps {
                                   bat 'mvn package'
                               }
-                          }}}
+                          }
+                          stage('MVN TEST') {
+                                                        steps {
+                                                            bat 'mvn test'
+                                                        }
+                                                    }
+}}
