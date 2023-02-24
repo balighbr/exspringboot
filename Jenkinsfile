@@ -23,4 +23,9 @@ pipeline {
                                   bat 'mvn compile'
                               }
                           }
-                          }}
+
+                          stage('MVN PACKAGE') {
+                              steps {
+                                  bat 'mvn package'
+                              }
+                          }}}
