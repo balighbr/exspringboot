@@ -44,6 +44,6 @@ pipeline {
 
                                                                                                            steps {
                                                                                                                bat 'echo "Docker is pushing ...."'
-                                                                                                           	bat 'docker push balighbr/demo3-1.0.0:latest'
+                                                                                                           	bat 'docker push balighbr/demo3-0.0.1'
                                                                                                                         }  }
 }}
